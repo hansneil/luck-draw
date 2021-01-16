@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="https://img.alicdn.com/tfs/TB1ctuyoAUmBKNjSZFOXXab2XXa-32-32.ico">
+  <link rel="stylesheet" href="./index.css" />
+  <title>抽奖</title>
+</head>
+
+<body>
+  <!-- doraemon -->
+  <div class="doraemon-wrapper">
+    <div class="doraemon">
+      <div class="circle-d border-black-1 head">
+        <div class="eyes">
+          <div class="circle-d pos-a bacc-white eye eye-left">
+            <div class="circle-d pos-r top-30 eye-pupil eye-pupil-left"></div>
+          </div>
+          <div class="circle-d pos-a bacc-white eye eye-right">
+            <div class="circle-d pos-r top-30 eye-pupil eye-pupil-right"></div>
+          </div>
+        </div>
+        <div class="border-black-2 bacc-white face">
+          <div class="circle-d pos-r border-black-2 bacc-brown-red nose">
+            <div class="circle-d pos-a bacc-white nose-light"></div>
+          </div>
+          <div class="m-hoz-auto pos-r bacc-white bread-field">
+            <div class="m-hoz-auto bacc-black nasal-groove"></div>
+            <div class="pos-a bacc-black bread bread-left bread-left-1"></div>
+            <div class="pos-a bacc-black bread bread-left bread-left-2"></div>
+            <div class="pos-a bacc-black bread bread-left bread-left-3"></div>
+            <div class="pos-a bacc-black bread bread-right bread-right-1"></div>
+            <div class="pos-a bacc-black bread bread-right bread-right-2"></div>
+            <div class="pos-a bacc-black bread bread-right bread-right-3"></div>
+          </div>
+  
+          
+          <div class="pos-r m-hoz-auto lips">
+            <div class="pos-a bacc-white border-black-2 lips-left"></div>
+            <div class="lips-center-left pull-left">
+              <div class="lips-center-left-inside circle-d border-black-2 bacc-white"></div>
+            </div>
+            <div class="lips-center pull-left bacc-white">
+              <div class="lips-center-inside pos-r m-hoz-auto border-black-2 bacc-mouse-red"></div>
+            </div>
+            <div class="lips-center-right pull-left">
+              <div class="lips-center-right-inside border-black-2 bacc-white">                            </div>
+            </div>
+            <div class="pos-a border-black-2 bacc-white lips-right"></div>
+          </div>
+          
+          <div class="mouth border-black-2 m-hoz-auto bacc-mouse-red">
+              <div class="tongue pos-r m-hoz-auto bacc-mouse-red">
+                  <div class="tongue-left pos-r pull-left">
+                      <div class="tongue-left-inside border-black-2 bacc-mouse-orange"></div>
+                  </div>
+                  <div class="tongue-right pos-r pull-left">
+                      <div class="tongue-right-inside border-black-2 bacc-mouse-orange"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading">LOADING...</div>
+  </div>
+  <!-- luck -->
+  <div class="background">
+    <div class="bob1"></div>
+    <div class="bob2"></div>
+    <div class="title-wrapper">
+      <div class="title left">MONTHLY</div>
+      <div class="title right">LOTTERY</div>
+    </div>
+    <div class="pointer" id="pointer"></div>
+    <div class="circle" id="circle"></div>
+    <div class="copyright">
+      <div class="logo"></div>
+      <span class="text">© 2020-2021 all rights reserved</span>
+      <div class="logo"></div>
+    </div>
+    <div class="dialog" id="dialog">
+      <div class="dialog-background"></div>
+      <div class="top">
+        <span class="round first"></span>
+        <span class="round"></span>
+        <span class="round"></span>
+        <span class="round"></span>
+        <span class="round second"></span>
+      </div>
+      <div class="bottom">
+        <span class="round first"></span>
+        <span class="round"></span>
+        <span class="round"></span>
+        <span class="round"></span>
+        <span class="round second"></span>
+      </div>
+      <div class="content">
+        <div class="label">/ 奖品名称 /</div>
+        <div class="value" id="gift"></div>
+        <div class="label">/ 兑换期限 /</div>
+        <div class="value" id="due"></div>
+        <div class="label">/ 奖品价值 /</div>
+        <div class="value" id="value"></div>
+      </div>
+      <div class="plr">
+        <div class="plr_in">
+          <span class="letter one1">
+            <ul>
+              <li>m</li>
+              <li>d</li>
+              <li>l</li>
+              <li>b</li>
+            </ul> 
+          </span>
+          <span class="letter two1">
+            <ul>
+              <li>y</li>
+              <li>o</li>
+              <li>o</li>
+              <li>e</li>
+            </ul>
+          </span>
+          <span class="letter three1">
+            <ul>
+              <li>n</li>
+              <li>s</li>
+              <li>.</li>
+              <li>t</li>
+            </ul>
+          </span>
+          <span class="letter four1">
+            <ul>
+              <li>i</li>
+              <li>t</li>
+              <li>t</li>
+              <li>w</li>
+            </ul>
+          </span>
+          <span class="letter five1">
+            <ul>
+              <li>z</li>
+              <li>g</li>
+              <li>h</li>
+              <li>e</li>
+            </ul>
+          </span>
+          <span class="letter six1">
+            <ul>
+              <li>n</li>
+              <li>l</li>
+              <li>r</li>
+              <li>j</li>
+            </ul>
+          </span>
+          <span class="letter seven1">
+            <ul>
+              <li>y</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+              <li>y</li>
+            </ul>
+          </span>
+        </div>
+      </div>      
+      <div class="number">
+        <span class="desc">No.</span>
+        <span id="number"></span>
+      </div>
+      <span class="close" id="close">&times;</span>
+    </div>
+  </div>
+  <script src="./const.js"></script>
+  <script>
+    // 转盘
+    const cirlce = document.querySelector('#circle');
+    const classArr = [
+      'one', 'two', 'three', 'four',
+      'five', 'six', 'seven', 'eight',
+      'nine', 'ten', 'eleven', 'twelve',
+    ];
+
+    const fragment = document.createDocumentFragment();
+    giftList.forEach((giftItem, index) => {
+      const giftDom = document.createElement('div');
+      giftDom.innerHTML = `
+        <img src=${giftItem.img} />
+      `;
+      giftDom.className = `part ${classArr[index]}${giftItem.isDrawed ? ' drawed' : ''}`;
+
+      fragment.appendChild(giftDom);
+    });
+
+    cirlce.appendChild(fragment);
+  </script>
+  <script>
+    const pointer = document.querySelector('#pointer');
+    let deg = 0;
+    let timer;
+
+    // 转盘动画
+    const startTimer = () => {
+      timer = setInterval(() => {
+        cirlce.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
+        if (deg === 360) {
+          deg = 0;
+        } else {
+          deg += 5;
+        }
+      }, 16.667);
+    };
+
+    // 寻找有效的奖项号码
+    const findNumber = () => {
+      const order = Math.floor(Math.random() * 12);
+      if (giftList[order].isDrawed) {
+        return findNumber();
+      }
+      return order;
+    }
+
+    const dialog = document.querySelector('#dialog');
+    const close = document.querySelector('#close');
+    const gift = document.querySelector('#gift');
+    const due = document.querySelector('#due');
+    const value = document.querySelector('#value');
+    const number = document.querySelector('#number');
+
+    pointer.addEventListener('click', (evt) => {
+      evt.stopPropagation();
+      if (dialog.style.display === 'block') {
+        return;
+      }
+      if (!timer) {
+        startTimer();
+      } else {
+        setTimeout(() => {
+          dialog.style.display = 'block';
+        }, 200);
+        clearInterval(timer);
+        timer = null;
+        const order = findNumber();
+        const selectGift = giftList[order];
+        gift.innerHTML = selectGift.gift;
+        due.innerHTML = selectGift.due;
+        value.innerHTML = selectGift.value;
+        number.innerHTML = String(order + 1).padStart(2, 0);
+        cirlce.style.transform = `translate(-50%, -50%) rotate(${order * -30 - 15}deg)`;
+      }
+    });
+
+    close.addEventListener('click', () => {
+      dialog.style.display = 'none';
+    });
+
+    document.body.addEventListener('click', () => {
+      dialog.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>
