@@ -326,14 +326,14 @@ html, body {
   height: 55px;
   background: url(https://img.alicdn.com/imgextra/i2/O1CN01G5qQR3214RmJ2VPh8_!!6000000006931-2-tps-800-444.png) no-repeat;
   background-size: auto 100%;
-  animation: rotate 1.2s linear infinite;
+  animation: rotate2 1.2s linear infinite;
 }
 
 .text {
   padding: 0 15px;
 }
 
-@keyframes rotate {
+@keyframes rotate2 {
   0% {
     background-position-x: 0;
   }
